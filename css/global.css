@@ -1,0 +1,59 @@
+body{
+  margin:0rem;
+  font-family:"Fira Sans";
+  color:var(--c085);
+
+}
+h1,h2,h3,p{
+  margin: 0rem;
+}
+ul{
+  margin:0rem;
+  padding: 0rem;
+  list-style: none;
+  }
+img{
+  max-width: 100%;/*This is the secret!!!*/
+  display:block;/*Assim teremos sempre elementos sequenciais sempre abaixo da imagem*/
+}
+a{
+  text-decoration: none;
+}
+
+.container/*para a introdução e experiencia*/{
+  max-width: 90rem;
+  padding:3rem 9rem 0rem 9rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap:8.75rem;
+  align-items:center ;/*Alinhamento horizontal*/
+}
+.subtitulo/*reaproveitamento para experiencia e formacao*/{
+  font-size:8rem ;
+  word-break: break-all;
+  line-height:1;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing:0%;
+  max-width:4ch;
+
+  }
+  @media (max-width:66rem){
+    .subtitulo/*reaproveitamento para experiencia e formacao*/{
+      font-size:3rem;
+      word-break: normal;
+      text-transform: capitalize;
+      max-width: initial;
+    
+      }
+  }
+
+
+
+
+
+
+
+
+

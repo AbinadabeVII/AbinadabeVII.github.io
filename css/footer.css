@@ -1,0 +1,47 @@
+#contato{
+  background: black;
+  position: relative;
+  z-index: -2;
+}
+.rodape{
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  padding:5rem 9rem 3rem 9rem;
+  margin: 0 auto;
+  align-items:center ;/*Alinhamento horizontal*/
+}
+.rodape div{
+display:flex;
+
+gap: 10rem;
+}
+.rodape div p:nth-child(1){
+  font-size:1.5rem;
+  color:var(--c04);
+  max-width: 35ch;
+}
+.rodape div p:nth-child(2){
+  font-size:2.25rem;
+  font-weight:bold;
+  line-height: 1.1;
+  color:var(--c00);
+  max-width: 30ch;
+}
+.rodape span{
+  margin: 0 auto;
+  padding:5rem 0rem 5rem 0rem;
+  font-size: 1.1;
+  color: var(--c07);
+} 
+@media (max-width:66rem)/**/{
+  .rodape div{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+}
+.rodape div :nth-child(1){
+  text-align: center;
+}
+}

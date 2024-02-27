@@ -1,0 +1,176 @@
+.formacao{
+  background:var(--c085);
+  color: #fff;
+position: relative;
+}
+.formacao .subtitulo{
+  color:black;
+  max-width:5ch;
+
+}
+.formacao-texto{
+  max-width: 40ch;/*limitação de largura por caracteres*/
+  font-size:1.5rem;
+  line-height: 1.33;
+  color: var(--c06);
+  margin-bottom: 4rem;
+
+}
+.formacao-texto strong{
+  color: var(--c03);
+}
+.formacao-lista{ 
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom:4rem;
+}
+.curso{
+  position: relative;
+  display: flex;
+  flex: 1;/*todos os elementos ficam do mesmo tamanho*/
+  background:black;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  flex-direction: column;
+}
+
+
+
+.curso-tipo{
+  font-size: .875rem;
+  text-transform: uppercase;
+  color: var(--c06);
+ 
+  margin-bottom: .65rem;
+
+}
+.curso-nome{
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+  flex: 1;
+}
+
+
+.formacao-lista .c10::before{
+  content: "";
+  background: url('/img/detalhemen_intro.svg') no-repeat;
+  background-size: 2.5rem 2.5rem;
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  top:-.5rem;
+  left: -.5rem;
+  z-index:-1;
+ 
+}
+.formacao-lista .c20::before{
+  content: "";
+  background: url('/img/detalhemen_intro.svg') no-repeat;
+  background-size: 2.5rem 2.5rem;
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  top:5rem;
+  right: -.5rem;
+  z-index:-1;
+  
+}
+.formacao-lista .c30::before{
+  content: "";
+  background: url('/img/detalhemen_intro.svg') no-repeat;
+  background-size: 2.5rem 2.5rem;
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  bottom:-.5rem;
+  right: -.5rem;
+  z-index:-1;
+}
+.cursos-extras h3{
+  font-size:.875rem ;
+  line-height: 1.4;
+  color:var(--c07);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+
+}
+
+
+
+.formacao-extra{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+.formacao-extra span{
+  color: var(--c07);
+  
+}
+    .formacao-extra li{
+      margin: 0rem 0rem 2rem 0rem;
+      display: flex;
+      justify-content: space-between;/*coloca um espaco "entre" o span e o outro elemento*/
+    }
+    @media (max-width:66rem)/*1056 px*/{
+
+      .formacao{ 
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .formacao .subtitulo{
+        max-width:initial;
+       
+        margin: 0 auto;
+        color: var(--c00);
+        text-align: center;
+        
+       
+        
+      }
+      .formacao-texto{
+        margin: 0rem auto 2rem auto;
+        text-align: center;
+      }
+    }
+    
+    .formacao-extra h3::before{
+      content: '';
+      background:url('/img/book.svg') no-repeat;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: block;
+      position: absolute;
+      top:-.2rem;
+      left:-2rem;
+    }
+    .formacao-extra ul, h3, li{
+      position: relative;
+    }
+    .formacao-extra ul li:nth-child(1) ::before{
+      content: '';
+      background:url('/img/pallet.svg') no-repeat;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: block;
+      position: absolute;
+      top:0rem;
+      left:-2rem;
+    }
+    .formacao-extra ul li:nth-child(2) ::before{
+      content: '';
+      background:url('/img/code.svg') no-repeat;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: block;
+      position: absolute;
+      top:0rem;
+      left:-2rem;
+    }

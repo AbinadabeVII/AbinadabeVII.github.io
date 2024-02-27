@@ -1,0 +1,44 @@
+.header{
+  max-width:90rem;/*limite de largura maxima do site */
+ 
+  padding:3rem 9rem 0rem 9rem ;/*com padding facilita na hora de coloração de background também, não tendo espaços em branco externos*/
+  display: flex;
+  justify-content: space-between;/*Organizando itens colocando maximo espaço entre*/
+  align-items: center;/*Centralização vertical*/
+  margin: 0 auto;/*Centralização do elemento em relação a tela, pois com a margem lateral como auto ele automaticamente pega o espaço que "sobra e divide por 2", mantendo assim a centralizaçao independentemente do tamanho de tela*/
+}
+.header-menu{
+  display: flex;
+  gap:2.5rem;
+  flex-wrap: wrap;/*Caso o espaço esteja muito pequeno ele quebra automaticamente*/
+  justify-content: center;/*Centralização dos elementos quando quebrarem!!!*/
+}
+.header-menu a/*seletor através de hierarquia de "elemento filho" eliminando a necessidade de identação pra todos os elementos, estando o elemento pai identado já é possivel distinguir dois elementos iguais em locais diferentes do site*/{
+  font-size: 1.25rem;
+  color:var(--c10);
+  font-weight:regular;/*possiveis valores numericos e strings*/
+  line-height: 1.3;/*sempre em relação a altura da letra*/
+  display: block;/*Lembrando que por padrão o link é elemento inline, portanto definimo-o como block para alterarmos o seu padding corretamente*/
+  padding:0.6rem 1.2rem;
+  border-radius: 0.25rem;
+  
+  
+}
+@media (max-width:54rem){
+  .header{
+    flex-direction: column;
+    gap:2.5rem;
+    padding:3rem 3rem 0rem 3rem ;
+  }
+  .header-menu{
+    display: flex;
+    gap:1rem;
+
+}
+.header-menu a{
+  background: var(--c01);
+  border:0.1rem solid var(--c02);
+  box-shadow: 0.04rem 0.08rem 0.3rem var(--c03);
+  
+}
+}

@@ -1,0 +1,117 @@
+
+.introducao h1{
+  font-size: 4.5rem;
+  line-height:1.125 ;/*proporcional ao line font size (81rem)*/
+  margin-bottom:1.875rem;/*margem inferior*/
+  color: var(--c10);
+  position: relative;
+}
+.introducao p{
+  font-size:1.5rem ;
+  color:var(--c08) ;
+
+}
+.introducao h1::after{
+  content: "";
+  display: block;
+ width:2.8125rem;
+  height:2.8125rem;
+  background: url('/img/detalhemen_intro.svg') no-repeat;
+  position: absolute;
+  top:-0.3rem ;
+  left:-0.8rem;
+  z-index: -1;
+}
+.introducao h1::before{
+  content: "";
+  display: block;
+  width:5.625rem;
+  height:5.625rem;
+  background: url('/img/detalhemai_intro.svg') no-repeat;
+  position: absolute;
+  top:10rem ;
+  left:28.5rem;
+  z-index: -1;
+}
+@media (max-width:75rem)/*1200px*/{
+  .introducao{
+    grid-template-columns: 1fr 1fr;
+    gap:4rem;}
+
+  .introducao h1{
+    font-size: 3rem;
+    line-height:1.125 ;/*proporcional ao line font size (81rem)*/
+    margin-bottom:1.875rem;/*margem inferior*/
+    color: var(--c10);
+    position: relative;}
+
+
+    .introducao h1::after{
+
+      top:-0.4rem ;
+      left:-0.9rem;
+     
+    }
+    .introducao h1::before{
+  
+      top:6rem ;
+      left:18rem;
+
+    }
+  }
+
+
+
+
+
+@media (max-width:66rem)/*1056px*/{
+  .introducao{
+    grid-template-columns: 1fr 1fr;
+    gap:4rem;
+    
+  }
+
+  .introducao h1{
+    font-size: 2.5rem;
+    line-height:1.125 ;/*proporcional ao line font size (81rem)*/
+    margin-bottom:1.875rem;/*margem inferior*/
+    color: var(--c10);
+    position: relative;
+    text-wrap: nowrap;
+  }
+  
+  .introducao h1::after{
+
+    top:-0.4rem ;
+    left:-0.9rem;
+   
+  }
+  .introducao h1::before{
+
+    top:4.5rem ;
+    left:14rem;
+
+  }
+
+
+}
+
+@media (max-width:54rem)/*864px*/{
+  .introducao{
+    max-width: 90rem;
+    padding:3rem 9rem 0rem 9rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:8.75rem;
+    align-items:center ;/*Alinhamento horizontal*/
+
+  }
+  .introducao img{
+    display: none;
+  }
+  .introducao div{
+    margin:0 auto;
+    
+  }
+}

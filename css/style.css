@@ -1,0 +1,32 @@
+@import '/css/global.css';
+@import '/css/header.css';
+@import '/css/introducao.css';
+@import '/css/experiencia.css';
+@import '/css/formacao.css';
+@import '/css/footer.css';
+
+:root{
+  --c00:#ffffff;
+  --c01: #fafafa;
+  --c02: #f7f7f7;
+  --c03: #e0e0e0;
+  --c04: #cccccc;
+  --c05: #b8b8b8;
+  --c06: #a6a6a6;
+  --c07: #808080;
+  --c08: #4d4d4d;
+  --c085:#090909;
+  --c09: #333333;
+  --c10: #141414;
+  --v01: #dcfffe;
+  --v02: #adfff4;
+  --v03: #86ffef;
+  --v04: #71edce;
+  --v05: #60d6b9;
+  --v06: #4cbea2;
+  --v07: #2b987d;
+  --v08: #0f5e4b;
+  --v09: #0b4a3a;
+  --v10: #0b4a3a;
+  --Grad:linear-gradient(90deg,rgba(85, 208, 177, 1),rgba(36, 155, 125, 1)); /*gradiente css*/
+}
